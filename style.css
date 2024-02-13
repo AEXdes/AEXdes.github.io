@@ -37,6 +37,8 @@ header img {
 
 main {
   margin-top: 5rem;
+  margin-bottom: 30rem;
+  padding-inline: 6rem;
 }
 
 main #nav nav {
@@ -63,7 +65,7 @@ main #nav nav a:hover {
 }
 
 main #index {
-  padding: 6rem;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,13 +81,19 @@ main #index h1 {
 
 main #index hr {
   width: 100%;
+  border: 0.1rem solid var(--white);
 }
 
-main #index div {
+main #index #index-button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+main #index .index-button {
   margin-top: 3rem;
 }
 
-main #index div a {
+main #index .index-button a {
   width: 18.5rem;
   height: 8.1rem;
   display: flex;
@@ -98,9 +106,30 @@ main #index div a {
   border-radius: 1rem;
 }
 
-main #index div a:hover {
+main #index .index-button a:hover {
   color: var(--deep-black);
   background-color: var(--white);
+}
+
+/* Media Breaks */
+@media only screen and (min-width: 768px) {
+  main {
+    margin-top: 10rem;
+    padding-inline: 10rem;
+  }
+  main #nav nav {
+    display: block;
+  }
+
+  main #index #index-button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  main #index {
+    display: block;
+  }
 }
 
 /* .ubuntu-light {
