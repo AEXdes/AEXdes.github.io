@@ -1,2 +1,7 @@
-# aex.github.io
-My Github page.
+# My github page V0.1
+This is my first main GitHub page, made quickly to show my work.
+
+- ## Structure
+  - Home
+    - Repositories
+      - Learning
