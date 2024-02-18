@@ -27,15 +27,18 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: center;
+  width: 100%;
   margin-top: 5rem;
 }
 
+header img {
+  width: 100%;
+}
+
 main {
+  padding-inline: 6rem;
   margin-top: 5rem;
   margin-bottom: 30rem;
-  padding-inline: 6rem;
 }
 
 main #nav nav {
@@ -126,10 +129,6 @@ main #index .index-button a:hover {
 
 /* Media Breaks */
 @media only screen and (min-width: 768px) {
-  header {
-    display: block;
-    padding-left: 10rem;
-  }
 
   main {
     margin-top: 10rem;
